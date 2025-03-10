@@ -1,9 +1,10 @@
 <div class="skull"></div>
 <div class="overlay can-hide"></div>
 <div class="btn">Click me!</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-<style>html {
+<style>
+html {
   background: black;
   overflow: hidden;
   font-family: "Oswald", sans-serif;
@@ -26,7 +27,7 @@
 }
 
 .jump {
-  background-size: 800px Auto;
+  background-size: 800px auto;
 }
 
 .overlay {
@@ -71,7 +72,6 @@
 </style>
 <script>
 var audio = new Audio('http://soundbible.com/mp3/Female_Scream_Horror-NeoPhyTe-138499973.mp3');
-
 setTimeout(function() { boo(); }, 2000);
 setTimeout(function() { reset(); }, 4000);
 
@@ -81,7 +81,6 @@ function boo () {
   $('.skull').addClass("shake");
   audio.play();
 }
-
 function reset() {
   $('.can-hide').removeClass("hide"); 
   $('.skull').removeClass("jump"); 
